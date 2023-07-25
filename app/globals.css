@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 247, 128;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -16,12 +16,20 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  background-color: rgb(var(--background-start-rgb));
+}
+
+img {
+  margin: auto;
+}
+
+nav {
+  background: rgba(255, 228, 146, 0.5);
+}
+
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
 }
