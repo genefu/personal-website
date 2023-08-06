@@ -33,3 +33,7 @@ li {
   padding-right: 10px;
   display: inline;
 }
+
+a.active {
+  color: rgb(107, 107, 107)
+}
