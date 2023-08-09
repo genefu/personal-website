@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { SpotifyPlaylist } from "../common/SpotifyPlaylist"
 
 function Aboutpage() {
     return (
@@ -20,6 +21,9 @@ function Aboutpage() {
                 <Link className = "col-start-6 col-span-1" href = "https://www.youtube.com/channel/UC_DiUZz_UwS-bR3lFqvU4qw" target = "_blank" rel = "noopener noreferrer">
                     <Image src = "/youtube.png" width = {130} height = {50} alt = "youtube channel"/>
                 </Link>
+            </div>
+            <p className = "text-center pb-4"> Here is an instrumental playlist I made and really like. </p>
+            <div className = "grid justify-items-center pb-8"> <SpotifyPlaylist width = "40%" link = "https://open.spotify.com/playlist/7nsDIyWSe5EJ8EsRqvMBcm?si=39ce4588e1c94188"/>
             </div>
         </>
     )
