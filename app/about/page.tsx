@@ -1,12 +1,18 @@
 import Link from "next/link"
 import Image from "next/image"
 import { SpotifyPlaylist } from "../common/SpotifyPlaylist"
+import { cospiog } from "../layout"
+import { cospiogI } from "../layout"
+
+//initialize fonts for this screen
 
 function Aboutpage() {
     return (
         <>
             <title> about me </title>
+            <div className={cospiogI.className}>
             <h1 className = "text-black font-bold text-7xl text-center py-5"> ABOUT ME </h1>
+            </div>
             <h1 className = "text-stone-600 font-bold text-xl text-center"> Hello, this page is all about me! </h1>
             <p className = "text-center"> This will have the link to my socials and ways to contact me. </p>
             <p className = "text-center pb-4"> The picture below is of me and my friend&apos;s cat. </p>
@@ -23,7 +29,8 @@ function Aboutpage() {
                 </Link>
             </div>
             <p className = "text-center pb-4"> Here is an instrumental playlist I made and really like. </p>
-            <div className = "grid justify-items-center pb-8"> <SpotifyPlaylist width = "40%" link = "https://open.spotify.com/playlist/7nsDIyWSe5EJ8EsRqvMBcm?si=39ce4588e1c94188"/>
+            <div className = "grid justify-items-center pb-8">
+                <SpotifyPlaylist width = "40%" link = "https://open.spotify.com/playlist/7nsDIyWSe5EJ8EsRqvMBcm?si=39ce4588e1c94188"/>
             </div>
         </>
     )

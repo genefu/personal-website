@@ -3,8 +3,13 @@ import { DM_Sans } from 'next/font/google'
 import type { AppProps } from "next/app"
 import Link from "next/link"
 import Header from "./common/header"
+import customFont from "next/font/local"
 
-const sans = DM_Sans({ weight: ["500"], subsets: ['latin'] })
+export const sans = DM_Sans({ weight: ["500"], subsets: ['latin'] })
+export const humbleNostalgia = customFont({ src: "../public/fonts/HumbleNostalgia.otf" })
+export const ntAdventure = customFont({ src: "../public/fonts/NTAdventure.otf"})
+export const cospiog = customFont({ src: "../public/fonts/Cospiog.otf"})
+export const cospiogI = customFont({ src: "../public/fonts/Cospiog-Italics.otf"})
 
 //export const metadata = {
   //title: 'Create Next App',

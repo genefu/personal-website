@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 247, 128;
+  --background-start-rgb: 254, 255, 206;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -22,10 +22,27 @@ html {
 
 img {
   margin: auto;
+  animation: loadIn ease-out 1s;
+  animation-iteration-count: 1;
 }
 
 nav {
   background: rgba(255, 228, 146, 0.5);
+}
+
+SpotifyPlaylist {
+  animation: loadIn ease-out 1s;
+  animation-iteration-count: 1;
+}
+
+p {
+  animation: loadIn ease-out 1s;
+  animation-iteration-count: 1;
+}
+
+h1 {
+  animation: loadIn ease-out 1s;
+  animation-iteration-count: 1;
 }
 
 li {
@@ -36,4 +53,15 @@ li {
 
 a.active {
   color: rgb(107, 107, 107)
+}
+
+@keyframes loadIn {
+  from {
+    opacity: 0.3;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
