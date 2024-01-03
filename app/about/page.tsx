@@ -24,7 +24,7 @@ function Aboutpage() {
                 <Link className = "col-start-5 col-span-1" href = "https://www.instagram.com/genesisfuu/" target = "_blank" rel = "noopener noreferrer">
                     <Image className = "py-10" src = "/instagram.PNG" width = {50} height = {90} alt = "instagram profile"/>
                 </Link>
-                <Link className = "col-start-6 col-span-1" href = "https://www.youtube.com/channel/UC_DiUZz_UwS-bR3lFqvU4qw" target = "_blank" rel = "noopener noreferrer">
+                <Link className = "col-start-6 col-span-1" href = "https://www.youtube.com/@genegenesis" target = "_blank" rel = "noopener noreferrer">
                     <Image src = "/youtube.png" width = {130} height = {50} alt = "youtube channel"/>
                 </Link>
             </div>
