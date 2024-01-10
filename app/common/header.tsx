@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { cospiog, cospiogI } from "../layout"
+import { serif } from "../layout"
 
 export default function Header() {
     const router = usePathname()
@@ -9,7 +9,7 @@ export default function Header() {
         <div>
             <nav className = "py-4 px-4 tracking-wide">
                 <ul>
-                    <li className={cospiog.className}> 
+                    <li className={serif.className}> 
                         <Link className = {router == "/" ? "active" : ""} href = "/"> genesis fu </Link>
                     </li>
                     <li> 

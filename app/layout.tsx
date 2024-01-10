@@ -1,10 +1,15 @@
 import './globals.css'
 import { DM_Sans } from 'next/font/google'
+import { DM_Serif_Display } from 'next/font/google'
+import { Fanwood_Text } from 'next/font/google'
 import type { AppProps } from "next/app"
 import Link from "next/link"
 import Header from "./common/header"
 import customFont from "next/font/local"
 
+export const body = Fanwood_Text({ weight: ["400"], style: ["normal"], subsets: ["latin"] })
+export const bodyI = Fanwood_Text({ weight: ["400"], style: ["italic"], subsets: ["latin"] })
+export const serif = DM_Serif_Display({ weight: ["400"], subsets: ["latin"] })
 export const sans = DM_Sans({ weight: ["500"], subsets: ['latin'] })
 export const humbleNostalgia = customFont({ src: "../public/fonts/HumbleNostalgia.otf" })
 export const ntAdventure = customFont({ src: "../public/fonts/NTAdventure.otf"})
@@ -24,7 +29,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body className={sans.className}>
+        <body className={body.className}>
           <Header/>
           {children}
           </body>
