@@ -54,7 +54,11 @@ li {
 }
 
 a.active {
-  color: rgb(107, 107, 107)
+  color: rgb(179, 179, 179)
+}
+
+a:hover {
+  color: rgb(179, 179, 179)
 }
 
 @keyframes loadIn {
